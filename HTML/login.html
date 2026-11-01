@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Coding Conf 2026</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/validation.js" defer></script>
+</head>
+
+<body class="register-page">
+
+    <header>
+        <h1><span>CODING</span> CONF</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="login.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="event-bar">
+        <table>
+            <tr>
+                <td>🗓️ October 26, 2026</td>
+                <td>📍 Papine, Kingston</td>
+                <td>👥 Conference</td>
+            </tr>
+        </table>
+    </section>
+
+    <main class="register-main">
+
+        <h2>Register for <span>Coding Conf 2026!</span></h2>
+        <p>Fill out the form to get your ticket.</p>
+
+        <form id="registrationForm" novalidate>
+
+            <label for="avatar">Upload Avatar</label>
+
+            <div class="upload-area">
+                <label for="avatar" class="upload-label">
+                <img id="avatarPreview" alt="Current Pic">
+                    <span>Upload Your Photo</span>
+                    <small>JPG and PNG </small>
+                </label>
+
+                <input type="file" id="avatar" name="avatar"
+                    accept=".jpg,.jpeg,.png">
+            </div>
+            <small class="error" id="avatarError"></small>
+
+            <label for="fullName">Name</label>
+            <input type="text" id="fullName" name="fullName"
+                   placeholder="Your Full Name">
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="codingconf@gmail.com">
+            <small class="error" id="emailError"></small>
+
+            <label for="github">GitHub User</label>
+            <input type="text" id="github" name="github"
+                   placeholder="@CodingConf">
+            <small class="error" id="githubError"></small>
+
+            <button type="submit">Complete Registration</button>
+
+        </form>
+
+
+    </main>
+
+</body>
+</html>

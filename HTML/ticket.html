@@ -1,0 +1,80 @@
+<!--
+Name: Matthew Sullivan
+Student ID: 2307072
+Module: Web Programming
+Tutor: Ms. C. Anuli
+Session: Monday, 6:00 PM - 8:00 PM
+Date: October 30, 2026
+Assignment: IA #2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ticket - Coding Conf 2026</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/ticket.js" defer></script>
+</head>
+
+<body class="ticket-page">
+
+    <header>
+        <h1><span>CODING</span> CONF</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="login.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="event-bar">
+        <table>
+            <tr>
+                <td>🗓️ October 26, 2026</td>
+                <td>📍 Papine, Kingston</td>
+                <td>👥 Conference</td>
+            </tr>
+        </table>
+    </section>
+
+    <main class="ticket-main">
+
+        <h2>Congrats, <span id="welcomeName"></span>!</h2>
+        <p>Your Coding Conf ticket is ready.</p>
+
+        <section class="ticket">
+
+            <h3><span>CODING</span> CONF</h3>
+            <p class="ticket-subtitle">ADMISSION PASS 2026</p>
+
+            <hr>
+
+              <img id="ticketAvatar" alt="Attendee Photo">
+
+            <h3 id="ticketName"></h3>
+            <a id="ticketGithub" target="_blank"
+               rel="noopener noreferrer"></a>
+
+            <div class="ticket-email">
+                <small>EMAIL</small>
+                <p id="ticketEmail"></p>
+            </div>
+
+            <hr>
+
+            <small>TICKET NUMBER</small>
+            <p id="ticketNumber"></p>
+
+        </section>
+
+        <a href="index.html" class="register-button">
+            Back to Home
+        </a>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+:root {
+    --dark: #100b25;
+    --top: #39205e;
+    --second: #24153f;
+    --purple: #c18aff;
+    --button: #9252d5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--top);
+    padding: 13px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 27px;
+}
+
+header h1 span {
+    color: var(--purple);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+.event-bar {
+    background-color: var(--second);
+    padding: 13px 4%;
+}
+
+.event-bar table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.event-bar td {
+    width: 33%;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.landing {
+    background-image: url("../assets/landingPageBackground.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 55px;
+    margin: 0 0 20px;
+}
+
+.welcome h2 span {
+    color: var(--purple);
+}
+
+.welcome p {
+    font-size: 19px;
+    max-width: 530px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.register-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--button);
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.register-button:hover {
+    background-color: #a36ae3;
+}
+
+.about {
+    max-width: 740px;
+    margin: 80px auto 0;
+    padding: 22px 28px;
+    background-color: rgba(36, 21, 63, 0.9);
+}
+
+.about h2 {
+    color: var(--purple);
+    margin-top: 0;
+}
+
+.about p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: var(--second);
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register-page {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(20, 10, 40, 0.75),
+        rgba(20, 10, 40, 0.75)
+    ), url("../assets/landingPageBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.register-main {
+    max-width: 520px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.register-main h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.register-main h2 span {
+    color: var(--purple);
+}
+
+.register-main > p {
+    text-align: center;
+    color: #ddd1ee;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+#registrationForm {
+    background-color: #302047;
+    padding: 28px;
+    border-radius: 6px;
+}
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 5px;
+    background-color: #45305d;
+    color: white;
+    border: 1px solid #786296;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+#registrationForm input::placeholder {
+    color: #c6b6d9;
+}
+
+#registrationForm input:focus {
+    outline: 2px solid var(--purple);
+}
+
+.upload-area {
+    background-color: #45305d;
+    border: 2px solid #786296;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.upload-label span,
+#avatarPreview {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+.upload-label small {
+    display: block;
+}
+
+.upload-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+#avatarPreview {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+.upload-label small {
+    color: #c6b6d9;
+    margin-top: 8px;
+}
+
+#avatar {
+    display: none;
+}
+
+.error {
+    display: block;
+    color: #ff9faf;
+    min-height: 18px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+#registrationForm button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--button);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registrationForm button:hover {
+    background-color: #a36ae3;
+}
+
+.form-note {
+    margin-top: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: #c6b6d9;
+}
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .event-bar td {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .welcome h2 {
+        font-size: 35px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+
+    .about {
+        margin-top: 65px;
+    }
+
+    .register-main {
+        margin: 30px auto;
+    }
+
+    .register-main h2 {
+        font-size: 26px;
+    }
+
+    #registrationForm {
+        padding: 20px;
+    }
+}
+
+
+
+.ticket-page {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(20, 10, 40, 0.75),
+        rgba(20, 10, 40, 0.75)
+    ), url("../assets/landingPageBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ticket-main {
+    max-width: 400px;
+    margin: 45px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.ticket-main h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.ticket-main h2 span {
+    color: var(--purple);
+}
+
+.ticket-main > p {
+    color: #ddd1ee;
+    margin-bottom: 25px;
+}
+
+.ticket {
+    background-image: url("../assets/glassmorph.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(48, 32, 71, 0);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+}
+
+.ticket h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.ticket h3 span {
+    color: var(--purple);
+}
+
+.ticket-subtitle {
+    color: #ddd1ee;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.ticket hr {
+    border: none;
+    border-top: 1px solid #786296;
+    margin: 25px 0;
+}
+
+#ticketAvatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+}
+
+#ticketName {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+#ticketGithub {
+    color: var(--purple);
+    margin-top: 8px;
+}
+
+.ticket-email {
+    background-color: rgba(36, 21, 63, 0.6);
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.ticket-email small,
+.ticket > small {
+    color: #c6b6d9;
+    font-size: 12px;
+}
+
+.ticket-email p {
+    margin-bottom: 0;
+}
+
+#ticketNumber {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+    .ticket-main {
+        margin: 30px auto;
+    }
+
+    .ticket-main h2 {
+        font-size: 26px;
+    }
+
+    .ticket {
+      padding: 30px 20px;
+    }
+}
+
+#ticketGithub {
+    display: inline-block;
+    color: var(--purple);
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+#ticketGithub:hover {
+    text-decoration: underline;
+}
